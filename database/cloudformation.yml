@@ -1,0 +1,88 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: DynamoDB resources for Commensal
+
+Resources:
+  CommensalUser:
+    Type: "AWS::DynamoDB::Table"
+    Properties: 
+      AttributeDefinitions:
+      - 
+        AttributeName: "id"
+        AttributeType: "S"
+      -
+        AttributeName: "geohash"
+        AttributeType: "S"
+      - 
+        AttributeName: "last_active"
+        AttributeType: "S"
+      KeySchema:
+      - 
+        AttributeName: "id"
+        KeyType: "HASH"
+      - 
+        AttributeName: "geohash"
+        KeyType: "RANGE"
+      GlobalSecondaryIndexes:
+        - 
+          IndexName: "geohash-time-index"
+          KeySchema:
+            -
+              AttributeName: "geohash"
+              KeyType: "HASH"
+            -
+              AttributeName: "last_active"
+              KeyType: "RANGE"
+          Projection:
+            NonKeyAttributes:
+              - "id"
+            ProjectionType: "INCLUDE"
+          ProvisionedThroughput:
+            ReadCapacityUnits: "5"
+            WriteCapacityUnits: "5"
+      ProvisionedThroughput:
+        ReadCapacityUnits: "5"
+        WriteCapacityUnits: "5"
+      TableName: commensal-user 
+  
+  CommensalSwipe:
+    Type: "AWS::DynamoDB::Table"
+    Properties: 
+      AttributeDefinitions:
+      - 
+        AttributeName: "swipe_id"
+        AttributeType: "S"
+      -
+        AttributeName: "timestamp"
+        AttributeType: "S"
+      KeySchema:
+      - 
+        AttributeName: "swipe_id"
+        KeyType: "HASH"
+      - 
+        AttributeName: "timestamp"
+        KeyType: "RANGE"
+      ProvisionedThroughput:
+        ReadCapacityUnits: "5"
+        WriteCapacityUnits: "5"
+      TableName: commensal-swipe   
+  CommensalMatch:
+    Type: "AWS::DynamoDB::Table"
+    Properties: 
+      AttributeDefinitions:
+      - 
+        AttributeName: "match_id"
+        AttributeType: "S"
+      -
+        AttributeName: "timestamp"
+        AttributeType: "S"
+      KeySchema:
+      - 
+        AttributeName: "match_id"
+        KeyType: "HASH"
+      - 
+        AttributeName: "timestamp"
+        KeyType: "RANGE"
+      ProvisionedThroughput:
+        ReadCapacityUnits: "5"
+        WriteCapacityUnits: "5"
+      TableName: commensal-match
