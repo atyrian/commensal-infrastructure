@@ -39,10 +39,9 @@ function runCommands (command, options) {
   try {
     let child = exec(command, options)
     child = String.fromCharCode.apply(null, child).trim()
-        
+
     if (child.indexOf('Error') !== -1) {
       let err = new Error('Error => :' + command)
-      console.log(child)
       throw err
     }
     return child
