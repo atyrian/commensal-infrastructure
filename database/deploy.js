@@ -7,7 +7,7 @@ const matches = require('./mock-data/matches')
 let profile
 let region
 let stage
-let populate = true
+let populate = false
 let directory = __dirname
 
 for (let i = 2; i < process.argv.length; i++) {
@@ -79,6 +79,9 @@ function validateParameters (param) {
       break
     case 'stage':
       stage = param[1]
+      break
+    case 'populate':
+      populate = new Boolean(param[0])
       break
     default:
       console.warn(`Ignoring invalid parameter ${param[0]} supplied value ${param[1]}` + '\n')
