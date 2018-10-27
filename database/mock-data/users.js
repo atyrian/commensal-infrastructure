@@ -88,7 +88,8 @@ const user1 = {
   },
   'shown_to': {
     SS: [
-      '2'
+      '2',
+      '3'
     ]
   },
   'match_id': {
@@ -289,7 +290,7 @@ const user3 = {
   },
   'shown_to': {
     SS: [
-      '0'
+      '1'
     ]
   },
   'match_id': {
