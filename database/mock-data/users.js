@@ -22,6 +22,9 @@ const user1 = {
       'last_name': {
         S: 'ricart'
       },
+      'birthday': {
+        S: '04/07/1990'
+      },
       'bio': {
         S: 'I like tacos'
       },
@@ -124,6 +127,9 @@ const user2 = {
       'last_name': {
         S: 'User'
       },
+      'birthday': {
+        S: '04/07/1990'
+      },
       'bio': {
         S: 'I also like tacos'
       },
@@ -223,6 +229,9 @@ const user3 = {
       },
       'last_name': {
         S: 'User'
+      },
+      'birthday': {
+        S: '04/07/1990'
       },
       'bio': {
         S: 'I like beer'
@@ -324,6 +333,9 @@ const user4 = {
       'last_name': {
         S: 'User'
       },
+      'birthday': {
+        S: '04/07/1990'
+      },
       'bio': {
         S: 'I like fish'
       },
@@ -423,6 +435,9 @@ const user5 = {
       },
       'last_name': {
         S: 'User'
+      },
+      'birthday': {
+        S: '04/07/1990'
       },
       'bio': {
         S: 'I am out of bounds'
