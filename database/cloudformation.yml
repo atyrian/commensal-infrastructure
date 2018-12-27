@@ -35,6 +35,9 @@ Resources:
           Projection:
             NonKeyAttributes:
               - "id"
+              - "pref"
+              - "person"
+              - "shown_to"
             ProjectionType: "INCLUDE"
           ProvisionedThroughput:
             ReadCapacityUnits: "5"
@@ -42,21 +45,21 @@ Resources:
       ProvisionedThroughput:
         ReadCapacityUnits: "5"
         WriteCapacityUnits: "5"
-      TableName: commensal-user 
-  
+      TableName: commensal-user
+
   CommensalSwipe:
     Type: "AWS::DynamoDB::Table"
     Properties: 
       AttributeDefinitions:
       - 
-        AttributeName: "swipe_id"
+        AttributeName: "base_id"
         AttributeType: "S"
       -
         AttributeName: "timestamp"
         AttributeType: "S"
       KeySchema:
       - 
-        AttributeName: "swipe_id"
+        AttributeName: "base_id"
         KeyType: "HASH"
       - 
         AttributeName: "timestamp"
