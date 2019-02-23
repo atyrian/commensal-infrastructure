@@ -55,14 +55,14 @@ Resources:
         AttributeName: "base_id"
         AttributeType: "S"
       -
-        AttributeName: "timestamp"
+        AttributeName: "target_id"
         AttributeType: "S"
       KeySchema:
       - 
         AttributeName: "base_id"
         KeyType: "HASH"
-      - 
-        AttributeName: "timestamp"
+      -
+        AttributeName: "target_id"
         KeyType: "RANGE"
       ProvisionedThroughput:
         ReadCapacityUnits: "5"

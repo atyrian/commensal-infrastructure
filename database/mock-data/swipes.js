@@ -10,9 +10,6 @@ const swipe1 = {
   },
   'like': {
     BOOL: true
-  },
-  'liked': {
-    BOOL: true
   }
 }
 
@@ -27,9 +24,6 @@ const swipe2 = {
     S: '1539793960947'
   },
   'like': {
-    BOOL: true
-  },
-  'liked': {
     BOOL: true
   }
 }
@@ -46,9 +40,6 @@ const swipe3 = {
   },
   'like': {
     BOOL: true
-  },
-  'liked': {
-    BOOL: false
   }
 }
 
@@ -64,9 +55,6 @@ const swipe4 = {
   },
   'like': {
     BOOL: false
-  },
-  'liked': {
-    BOOL: true
   }
 }
 
@@ -98,4 +86,4 @@ const params = {
   ReturnConsumedCapacity: 'TOTAL'
 }
 
-module.exports = {params}
+module.exports = { params }
