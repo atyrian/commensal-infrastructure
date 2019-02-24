@@ -5,7 +5,7 @@ const swipe1 = {
   'target_id': {
     S: '2'
   },
-  'timestamp': {
+  'createdAt': {
     S: '1539793960947'
   },
   'like': {
@@ -20,7 +20,7 @@ const swipe2 = {
   'target_id': {
     S: '1'
   },
-  'timestamp': {
+  'createdAt': {
     S: '1539793960947'
   },
   'like': {
@@ -35,7 +35,7 @@ const swipe3 = {
   'target_id': {
     S: '1'
   },
-  'timestamp': {
+  'createdAt': {
     S: '1539795936533'
   },
   'like': {
@@ -50,7 +50,7 @@ const swipe4 = {
   'target_id': {
     S: '3'
   },
-  'timestamp': {
+  'createdAt': {
     S: '1539795936533'
   },
   'like': {

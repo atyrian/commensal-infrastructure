@@ -2,7 +2,7 @@ const match1 = {
   'match_id': {
     S: 'm1'
   },
-  'timestamp': {
+  'createdAt': {
     S: '1539793960947'
   },
   'messages': {
