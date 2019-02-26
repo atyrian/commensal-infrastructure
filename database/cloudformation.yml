@@ -16,12 +16,8 @@ Resources:
         AttributeName: "last_active"
         AttributeType: "S"
       KeySchema:
-      - 
-        AttributeName: "id"
+      - AttributeName: "id"
         KeyType: "HASH"
-      - 
-        AttributeName: "geohash"
-        KeyType: "RANGE"
       GlobalSecondaryIndexes:
         - 
           IndexName: "geohash-time-index"
