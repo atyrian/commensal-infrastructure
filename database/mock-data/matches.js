@@ -46,6 +46,16 @@ const match1 = {
       '1',
       '2'
     ]
+  },
+  'connectionIds': {
+    M: {
+      '1': {
+        S: 'p1ConnectionId'
+      },
+      '2': {
+        S: 'p2ConnectionId'
+      }
+    }
   }
 }
 
@@ -62,4 +72,4 @@ const params = {
   ReturnConsumedCapacity: 'TOTAL'
 }
 
-module.exports = {params}
+module.exports = { params }
