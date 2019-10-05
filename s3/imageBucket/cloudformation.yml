@@ -1,0 +1,57 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Parameters:
+  StageParameter:
+    Type: String
+    AllowedValues:
+      - dev
+      - test
+      - prod
+    Description: Enter dev, test, or prod.
+
+Description: S3 Bucket for storing commensal user profile photos for.
+Resources:
+  ImageBucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: !Join [-, [commensal, userimages, !Ref StageParameter]]
+      CorsConfiguration:
+        CorsRules:
+          - AllowedHeaders:
+              - Authorization
+              - Content-Length
+            AllowedMethods:
+              - GET
+              - PUT
+              - POST
+            AllowedOrigins:
+              - "*"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: false
+  ImageBucketPolicy: 
+    Type: AWS::S3::BucketPolicy
+    Properties: 
+      Bucket: 
+        Ref: "ImageBucket"
+      PolicyDocument: 
+        Statement: 
+          - 
+            Action: 
+              - "s3:GetObject"
+            Effect: "Allow"
+            Resource: 
+              Fn::Join: 
+                - ""
+                - 
+                  - "arn:aws:s3:::"
+                  - 
+                    Ref: "ImageBucket"
+                  - "/*"
+            Principal: "*"
+
+
+
+# TODO PUT with commensal domain.
+# Serve with cloudfront, use OAI and private s3 bucket instead.
+# CF https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html
+# Origin Access Identity (OAI), https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/
