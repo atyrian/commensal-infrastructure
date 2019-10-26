@@ -33,13 +33,13 @@ const user1 = {
       },
       'photos': {
         M: {
-          'photo_1': {
+          'photo_0': {
             S: 'https://photo.1'
           },
-          'photo_2': {
+          'photo_1': {
             S: 'https://photo.2'
           },
-          'photo_3': {
+          'photo_2': {
             S: 'https://photo.3'
           }
         }
@@ -138,13 +138,13 @@ const user2 = {
       },
       'photos': {
         M: {
-          'photo_1': {
+          'photo_0': {
             S: 'https://photo.1'
           },
-          'photo_2': {
+          'photo_1': {
             S: 'https://photo.2'
           },
-          'photo_3': {
+          'photo_2': {
             S: 'https://photo.3'
           }
         }
@@ -241,13 +241,13 @@ const user3 = {
       },
       'photos': {
         M: {
-          'photo_1': {
+          'photo_0': {
             S: 'https://photo.1'
           },
-          'photo_2': {
+          'photo_1': {
             S: 'https://photo.2'
           },
-          'photo_3': {
+          'photo_2': {
             S: 'https://photo.3'
           }
         }
@@ -344,13 +344,13 @@ const user4 = {
       },
       'photos': {
         M: {
-          'photo_1': {
+          'photo_0': {
             S: 'https://photo.1'
           },
-          'photo_2': {
+          'photo_1': {
             S: 'https://photo.2'
           },
-          'photo_3': {
+          'photo_2': {
             S: 'https://photo.3'
           }
         }
@@ -447,13 +447,13 @@ const user5 = {
       },
       'photos': {
         M: {
-          'photo_1': {
+          'photo_0': {
             S: 'https://photo.1'
           },
-          'photo_2': {
+          'photo_1': {
             S: 'https://photo.2'
           },
-          'photo_3': {
+          'photo_2': {
             S: 'https://photo.3'
           }
         }
