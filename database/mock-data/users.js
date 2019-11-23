@@ -46,7 +46,7 @@ const user1 = {
       },
       'fav_venues': {
         M: {
-          'venue_1': {
+          'venue_0': {
             M: {
               'venue_name': {
                 S: 'TacoBell'
@@ -59,7 +59,7 @@ const user1 = {
               }
             }
           },
-          'venue_2': {
+          'venue_1': {
             M: {
               'venue_name': {
                 S: 'LemonGrass'
@@ -72,7 +72,7 @@ const user1 = {
               }
             }
           },
-          'venue_3': {
+          'venue_2': {
             M: {
               'venue_name': {
                 S: 'TexMex'
@@ -151,7 +151,7 @@ const user2 = {
       },
       'fav_venues': {
         M: {
-          'venue_1': {
+          'venue_0': {
             M: {
               'venue_name': {
                 S: 'TacoBell'
@@ -164,7 +164,7 @@ const user2 = {
               }
             }
           },
-          'venue_2': {
+          'venue_1': {
             M: {
               'venue_name': {
                 S: 'LemonGrass'
@@ -177,7 +177,7 @@ const user2 = {
               }
             }
           },
-          'venue_3': {
+          'venue_2': {
             M: {
               'venue_name': {
                 S: 'TexMex'
@@ -254,7 +254,7 @@ const user3 = {
       },
       'fav_venues': {
         M: {
-          'venue_1': {
+          'venue_0': {
             M: {
               'venue_name': {
                 S: 'TacoBell'
@@ -267,7 +267,7 @@ const user3 = {
               }
             }
           },
-          'venue_2': {
+          'venue_1': {
             M: {
               'venue_name': {
                 S: 'LemonGrass'
@@ -280,7 +280,7 @@ const user3 = {
               }
             }
           },
-          'venue_3': {
+          'venue_2': {
             M: {
               'venue_name': {
                 S: 'TexMex'
@@ -357,7 +357,7 @@ const user4 = {
       },
       'fav_venues': {
         M: {
-          'venue_1': {
+          'venue_0': {
             M: {
               'venue_name': {
                 S: 'TacoBell'
@@ -370,7 +370,7 @@ const user4 = {
               }
             }
           },
-          'venue_2': {
+          'venue_1': {
             M: {
               'venue_name': {
                 S: 'LemonGrass'
@@ -383,7 +383,7 @@ const user4 = {
               }
             }
           },
-          'venue_3': {
+          'venue_2': {
             M: {
               'venue_name': {
                 S: 'TexMex'
@@ -460,7 +460,7 @@ const user5 = {
       },
       'fav_venues': {
         M: {
-          'venue_1': {
+          'venue_0': {
             M: {
               'venue_name': {
                 S: 'TacoBell'
@@ -473,7 +473,7 @@ const user5 = {
               }
             }
           },
-          'venue_2': {
+          'venue_1': {
             M: {
               'venue_name': {
                 S: 'LemonGrass'
@@ -486,7 +486,7 @@ const user5 = {
               }
             }
           },
-          'venue_3': {
+          'venue_2': {
             M: {
               'venue_name': {
                 S: 'TexMex'
